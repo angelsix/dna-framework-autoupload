@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <RootNamespace>Dna.AutoUpload</RootNamespace>
+    <Description>A module that handles automatic uploading of content in a totally agnostic way. The system/device can implement a content manager to provide content to be uploaded, and a content uploader to upload content to a destination, and this module handles all the complexities of automatically uploading the content and keeping track of the content and progress</Description>
+    <PackageProjectUrl>https://github.com/angelsix/dna-framework-autoupload</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/angelsix/dna-framework-autoupload</RepositoryUrl>
+    <PackageTags>dna framework auto upload angelsix luke malpass web core cross platform</PackageTags>
+    <PackageReleaseNotes>A module that handles automatic uploading if content in a totally agnostic way. The system/device can implement a content manager to provide content to be uploaded, and a content uploader to upload content to a destination, and this module handles all the complexities of automatically uploading the content and keeping track of the content and progress</PackageReleaseNotes>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DocumentationFile>bin\Release\netstandard2.0\Dna.Framework.AutoUpload.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Dna.Framework" Version="1.0.4" />
+  </ItemGroup>
+
+</Project>
